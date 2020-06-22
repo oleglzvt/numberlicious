@@ -23,7 +23,6 @@ class NumberFact extends Component {
             method: 'GET',
             dataType: 'json'
         }).then( (res) => {
-            console.log(res);
             this.setState({
                 numberFact: res.data.text
             })

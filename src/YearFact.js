@@ -23,7 +23,6 @@ class YearFact extends Component {
             method: 'GET',
             dataType: 'json'
         }).then( (res) => {
-            console.log(res);
             this.setState({
                 yearFact: res.data.text
             })
@@ -32,6 +31,7 @@ class YearFact extends Component {
         })
     }
 
+    
     render() {
         return (
             <Fragment>

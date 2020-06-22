@@ -7,8 +7,6 @@ class AppInputForm extends Component {
     constructor() {
     super();
         this.state = {
-            year: '',
-            yearFact: '',
             yearIsChecked: false,
             dayMonthIsChecked: false,
             numberIsChecked: false
@@ -16,7 +14,6 @@ class AppInputForm extends Component {
     }
 
     handleYearCheck = () => {
-        console.log('year selected');
         this.setState({
             yearIsChecked: true,
             dayMonthIsChecked: false,
@@ -25,7 +22,6 @@ class AppInputForm extends Component {
     }
 
     handleDayMonthCheck = () => {
-        console.log('month selected');
         this.setState({
             yearIsChecked: false,
             dayMonthIsChecked: true,
@@ -34,7 +30,6 @@ class AppInputForm extends Component {
     }
 
     handleNumberCheck = () => {
-        console.log('number selected');
         this.setState({
             yearIsChecked: false,
             dayMonthIsChecked: false,
@@ -59,7 +54,6 @@ class AppInputForm extends Component {
                 {this.state.yearIsChecked ? <YearFact /> : null}
                 {this.state.dayMonthIsChecked ? <DayMonthFact /> : null}
                 {this.state.numberIsChecked ? <NumberFact /> : null}
-
             </Fragment>
         );
     }

@@ -23,7 +23,6 @@ class DayMonthFact extends Component {
             method: 'GET',
             dataType: 'json'
         }).then( (res) => {
-            console.log(res);
             this.setState({
                 dayMonthFact: res.data.text
             })
