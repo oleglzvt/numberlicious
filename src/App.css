@@ -120,6 +120,7 @@ button:active {
 .description {
   font-size: 2rem;
   text-align: center;
+  list-style: none;
 }
 
 .wrapper {
@@ -130,8 +131,11 @@ button:active {
 
 .optionsMenu {
   border: none;
+  -webkit-display: flex;
   display: flex;
   justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+
 }
 
 .optionsMenu input {
@@ -184,6 +188,7 @@ button:active {
   .optionsMenu{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .optionsMenu label {
@@ -191,8 +196,16 @@ button:active {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 420px) {
   h1 {
-    font-size: 3.6rem;
+    font-size: 6rem;
+  }
+
+  .headerSpan {
+    display: block;
+  }
+
+  .description {
+    text-align: left;
   }
 }

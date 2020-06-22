@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <h1>Numberlicious</h1>
+        <h1>Number<span className="headerSpan">licious</span></h1>
         <ul className="description">
           <li><span>Step 1:</span> Choose the category</li>
           <li><span>Step 2:</span> Enter a number and click "Submit"</li>
