@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #EEEEEE;
 }
 
 h1 {
@@ -66,7 +66,7 @@ h1 {
   font-family: 'Comfortaa', cursive;
   letter-spacing: 2px;
   color: #039BE5;
-  text-shadow: 4px 4px 4px #0071a9;
+  text-shadow: 4px 4px 4px #0071A9;
   text-transform: uppercase;
 }
 
@@ -110,7 +110,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #d0b15c;
+  background-color: #D0B15C;
 }
 
 button:active {
@@ -147,7 +147,7 @@ button:active {
   text-align: center;
   border-radius: 5px;
   background-color: #039BE5;
-  color: white;
+  color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   margin-top: 3%;
@@ -155,7 +155,7 @@ button:active {
 
 .optionsMenu label:hover,
 .optionsMenu label:focus {
-  background-color: rgb(0, 84, 230);
+  background-color: #0054e6;
 }
 
 .optionsMenu label:active {
@@ -179,7 +179,6 @@ button:active {
 
   p {
     width: 90%;
-    /* text-align: left; */
   }
 
   .optionsMenu{

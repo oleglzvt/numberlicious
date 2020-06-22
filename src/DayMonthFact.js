@@ -19,12 +19,16 @@ class DayMonthFact extends Component {
     handleClick = (e) => {
         e.preventDefault();
         axios({
-            url: `http://numbersapi.com/${this.state.dayMonth}/date?json`,
-            method: 'GET',
-            dataType: 'json'
+            url: 'https://proxy.hackeryou.com',
+            dataType: 'json',
+            method:'GET',
+            params: {
+                reqUrl: `http://numbersapi.com/${this.state.dayMonth}/date?json`,
+                xmlToJSON: false,
+            }
         }).then( (res) => {
             this.setState({
-                dayMonthFact: res.data.text
+                dayMonthFact: res.data
             })
         }).catch(() => {
             alert('Invalid format, please enter numbers only')

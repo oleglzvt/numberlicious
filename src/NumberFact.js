@@ -19,12 +19,16 @@ class NumberFact extends Component {
     handleClick = (e) => {
         e.preventDefault();
         axios({
-            url: `http://numbersapi.com/${this.state.number}/math?json`,
-            method: 'GET',
-            dataType: 'json'
+            url: 'https://proxy.hackeryou.com',
+            dataType: 'json',
+            method:'GET',
+            params: {
+                reqUrl: `http://numbersapi.com/${this.state.number}/math?json`,
+                xmlToJSON: false,
+            }
         }).then( (res) => {
             this.setState({
-                numberFact: res.data.text
+                numberFact: res.data
             })
         }).catch(() => {
             alert('Invalid format, please enter numbers only')
