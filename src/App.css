@@ -131,11 +131,8 @@ button:active {
 
 .optionsMenu {
   border: none;
-  -webkit-display: flex;
   display: flex;
   justify-content: space-evenly;
-  -webkit-justify-content: space-evenly;
-
 }
 
 .optionsMenu input {
