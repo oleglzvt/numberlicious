@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/oleg-lozovatyi-project-five/static/css/main.6acfc2c5.chunk.css",
-    "main.js": "/oleg-lozovatyi-project-five/static/js/main.98a4961d.chunk.js",
-    "main.js.map": "/oleg-lozovatyi-project-five/static/js/main.98a4961d.chunk.js.map",
+    "main.js": "/oleg-lozovatyi-project-five/static/js/main.c8d1f758.chunk.js",
+    "main.js.map": "/oleg-lozovatyi-project-five/static/js/main.c8d1f758.chunk.js.map",
     "runtime-main.js": "/oleg-lozovatyi-project-five/static/js/runtime-main.a8967794.js",
     "runtime-main.js.map": "/oleg-lozovatyi-project-five/static/js/runtime-main.a8967794.js.map",
     "static/js/2.a8dda089.chunk.js": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js",
     "static/js/2.a8dda089.chunk.js.map": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js.map",
     "index.html": "/oleg-lozovatyi-project-five/index.html",
-    "precache-manifest.168241188211356a92636b2a0e88bbcc.js": "/oleg-lozovatyi-project-five/precache-manifest.168241188211356a92636b2a0e88bbcc.js",
+    "precache-manifest.58289f59e31931fd1042225976f711f0.js": "/oleg-lozovatyi-project-five/precache-manifest.58289f59e31931fd1042225976f711f0.js",
     "service-worker.js": "/oleg-lozovatyi-project-five/service-worker.js",
     "static/css/main.6acfc2c5.chunk.css.map": "/oleg-lozovatyi-project-five/static/css/main.6acfc2c5.chunk.css.map",
     "static/js/2.a8dda089.chunk.js.LICENSE.txt": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a8967794.js",
     "static/js/2.a8dda089.chunk.js",
     "static/css/main.6acfc2c5.chunk.css",
-    "static/js/main.98a4961d.chunk.js"
+    "static/js/main.c8d1f758.chunk.js"
   ]
 }

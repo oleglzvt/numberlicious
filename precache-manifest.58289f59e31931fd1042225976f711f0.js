@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f43b10fecfd6f1d646d26bae8ea59b2",
+    "revision": "8717e58891105a38ebee03cd304985af",
     "url": "/oleg-lozovatyi-project-five/index.html"
   },
   {
-    "revision": "e292d7feb7eb1d0947d4",
+    "revision": "89b8ea060ef8db8d2c57",
     "url": "/oleg-lozovatyi-project-five/static/css/main.6acfc2c5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e292d7feb7eb1d0947d4",
-    "url": "/oleg-lozovatyi-project-five/static/js/main.98a4961d.chunk.js"
+    "revision": "89b8ea060ef8db8d2c57",
+    "url": "/oleg-lozovatyi-project-five/static/js/main.c8d1f758.chunk.js"
   },
   {
     "revision": "5ead040ef0fbfd35df1b",
