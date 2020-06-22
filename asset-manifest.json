@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/oleg-lozovatyi-project-five/static/css/main.6e7a9650.chunk.css",
+    "main.js": "/oleg-lozovatyi-project-five/static/js/main.dd7032c3.chunk.js",
+    "main.js.map": "/oleg-lozovatyi-project-five/static/js/main.dd7032c3.chunk.js.map",
+    "runtime-main.js": "/oleg-lozovatyi-project-five/static/js/runtime-main.a8967794.js",
+    "runtime-main.js.map": "/oleg-lozovatyi-project-five/static/js/runtime-main.a8967794.js.map",
+    "static/js/2.a8dda089.chunk.js": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js",
+    "static/js/2.a8dda089.chunk.js.map": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js.map",
+    "index.html": "/oleg-lozovatyi-project-five/index.html",
+    "precache-manifest.3b50e89c7ca60a8e3da4b7e2508b3dc6.js": "/oleg-lozovatyi-project-five/precache-manifest.3b50e89c7ca60a8e3da4b7e2508b3dc6.js",
+    "service-worker.js": "/oleg-lozovatyi-project-five/service-worker.js",
+    "static/css/main.6e7a9650.chunk.css.map": "/oleg-lozovatyi-project-five/static/css/main.6e7a9650.chunk.css.map",
+    "static/js/2.a8dda089.chunk.js.LICENSE.txt": "/oleg-lozovatyi-project-five/static/js/2.a8dda089.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8967794.js",
+    "static/js/2.a8dda089.chunk.js",
+    "static/css/main.6e7a9650.chunk.css",
+    "static/js/main.dd7032c3.chunk.js"
+  ]
+}
