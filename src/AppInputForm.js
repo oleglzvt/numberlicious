@@ -51,6 +51,9 @@ class AppInputForm extends Component {
 
     handleClick = (e) => {
         e.preventDefault();
+        this.setState({
+            userFact: ''
+        })
         let urlCallValue = '';
         if (this.state.yearIsChecked) {
             urlCallValue = 'year';
@@ -98,7 +101,7 @@ class AppInputForm extends Component {
 
                 {this.state.numberIsChecked ? <NumberFact handleClick={this.handleClick} handleInput={this.handleInput}/> : null}
 
-                <p>{this.state.userFact}</p>
+                <p className={this.state.userFact ? 'animate' : null}>{this.state.userFact}</p>
             </Fragment>
         );
     }
