@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/oleg-lozovatyi-project-five/precache-manifest.3ccc859c47a2280313c321583b1bd305.js"
+  "/oleg-lozovatyi-project-five/precache-manifest.559cc56e3debfa2977dd402e1e2b50b7.js"
 );
 
 self.addEventListener('message', (event) => {
