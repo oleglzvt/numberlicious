@@ -1,50 +1,13 @@
-import React, {Component, Fragment} from 'react';
-import axios from 'axios';
+import React, {Component} from 'react';
 
 class DayMonthFact extends Component {
-    constructor() {
-    super();
-        this.state = {
-            dayMonth: '',
-            dayMonthFact: '',
-        }
-    }
-
-    handleInput = (e) => {
-        this.setState({
-            dayMonth: e.target.value
-        })
-    }
-
-    handleClick = (e) => {
-        e.preventDefault();
-        axios({
-            url: 'https://proxy.hackeryou.com',
-            dataType: 'json',
-            method:'GET',
-            params: {
-                reqUrl: `http://numbersapi.com/${this.state.dayMonth}/date?json`,
-                xmlToJSON: false,
-            }
-        }).then( (res) => {
-            this.setState({
-                dayMonthFact: res.data
-            })
-        }).catch(() => {
-            alert('Invalid format, please enter numbers only')
-        })
-    }
-
     render() {
         return (
-            <Fragment>
-                <form>
-                    <label htmlFor="dayMonthInput" className="sr-only">Day and month input</label>
-                    <input className="userInput" type="text" name="dayMonthInput" id="dayMonthInput" placeholder="Enter date (MM/DD)" onChange={this.handleInput}/>
-                    <button type="submit" onClick={this.handleClick}>Submit</button>
-                </form>
-                <p>{this.state.dayMonthFact}</p>
-            </Fragment>
+            <form>
+                <label htmlFor="dayMonthInput" className="sr-only">Day and month input</label>
+                <input className="userInput" type="text" name="dayMonthInput" id="dayMonthInput" placeholder="Enter date (MM/DD)" onChange={this.props.handleInput}/>
+                <button type="submit" onClick={(e) => this.props.handleClick(e)}>Submit</button>
+            </form>
         )
     }
 }
