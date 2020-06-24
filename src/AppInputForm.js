@@ -5,8 +5,10 @@ import DayMonthFact from './DayMonthFact.js'
 import axios from 'axios';
 
 class AppInputForm extends Component {
+    
     constructor() {
-    super();
+        super();
+        // initial state values
         this.state = {
             userInput: '',
             userFact: '',
@@ -16,6 +18,7 @@ class AppInputForm extends Component {
         }
     }
 
+    // check which options was selected by user
     handleYearCheck = () => {
         this.setState({
             yearIsChecked: true,
@@ -42,18 +45,23 @@ class AppInputForm extends Component {
             userFact: '',
         })
     }
-
+    
+    // update the user input state value
     handleInput = (e) => {
         this.setState({
             userInput: e.target.value
         })
     }
 
+    // on submit button click make an API call
     handleClick = (e) => {
         e.preventDefault();
         this.setState({
             userFact: ''
         })
+        
+        // variable used in the API call
+        // checks for which keyword showld be used in the call URL
         let urlCallValue = '';
         if (this.state.yearIsChecked) {
             urlCallValue = 'year';
@@ -95,6 +103,7 @@ class AppInputForm extends Component {
                     </div>
                 </fieldset>
 
+                {/* Check for which component to render based on the user choice */}
                 {this.state.yearIsChecked ? <YearFact handleClick={this.handleClick} handleInput={this.handleInput} /> : null}
 
                 {this.state.dayMonthIsChecked ? <DayMonthFact handleClick={this.handleClick} handleInput={this.handleInput}/> : null}
