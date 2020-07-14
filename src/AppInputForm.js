@@ -63,6 +63,7 @@ class AppInputForm extends Component {
         // variable used in the API call
         // checks for which keyword showld be used in the call URL
         let urlCallValue = '';
+        // let dayMonthPattern = '\b(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])\b'
         if (this.state.yearIsChecked) {
             urlCallValue = 'year';
         } else if (this.state.dayMonthIsChecked) {
@@ -90,18 +91,13 @@ class AppInputForm extends Component {
     render () {
         return (
             <Fragment>
-                <fieldset>
+                {/* <fieldset> */}
                     <div className="optionsMenu">
-                        <label htmlFor="year">Year</label>
-                        <input type="radio" name="inputOption" id="year" onChange={this.handleYearCheck}/>
-    
-                        <label htmlFor="monthDay">Month/Day</label>
-                        <input type="radio" name="inputOption" id="monthDay" onChange={this.handleDayMonthCheck}/>
-    
-                        <label htmlFor="number">Number</label>
-                        <input type="radio" name="inputOption" id="number" onChange={this.handleNumberCheck}/>
+                        <button onClick={this.handleYearCheck}>Year</button>
+                        <button onClick={this.handleDayMonthCheck}>Month/Day</button>
+                        <button onClick={this.handleNumberCheck}>Number</button>
                     </div>
-                </fieldset>
+                {/* </fieldset> */}
 
                 {/* Check for which component to render based on the user choice */}
                 {this.state.yearIsChecked ? <YearFact handleClick={this.handleClick} handleInput={this.handleInput} /> : null}

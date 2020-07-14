@@ -109,13 +109,7 @@ fieldset {
   justify-content: space-evenly;
 }
 
-.optionsMenu input {
-  position: absolute;
-  left: -100%;
-  top: -100%;
-}
-
-.optionsMenu label {
+.optionsMenu button {
   font-size: 2rem;
   padding: 10px;
   width: 20%;
@@ -128,18 +122,18 @@ fieldset {
   margin-top: 3%;
 }
 
-.optionsMenu label:hover,
-.optionsMenu label:focus {
+.optionsMenu button:hover,
+.optionsMenu button:focus {
   background-color: #0054e6;
 }
 
-.optionsMenu label:active {
+.optionsMenu button:active {
   background-color: #039BE5;
 }
 
 /* Mobile design */
 @media (max-width: 820px) {
-  .optionsMenu label {
+  .optionsMenu button {
     width: 25%;
   }
 }
@@ -163,7 +157,7 @@ fieldset {
     justify-content: center;
   }
 
-  .optionsMenu label {
+  .optionsMenu button {
     width: 50%;
   }
 }

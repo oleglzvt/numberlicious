@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 class DayMonthFact extends Component {
+
     render() {
         return (
             <form className="animate">
