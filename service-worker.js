@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/numberlicious/precache-manifest.cb0c1a31944afe02c97307193b427dd8.js"
+  "/numberlicious/precache-manifest.acf75d8b2f432a9df2ac0019783e58ea.js"
 );
 
 self.addEventListener('message', (event) => {
