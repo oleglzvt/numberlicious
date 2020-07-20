@@ -14,7 +14,8 @@ class AppInputForm extends Component {
             userFact: '',
             yearIsChecked: false,
             dayMonthIsChecked: false,
-            numberIsChecked: false
+            numberIsChecked: false,
+            dayMonthPattern: /(0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])/
         }
     }
 
@@ -49,7 +50,7 @@ class AppInputForm extends Component {
     // update the user input state value
     handleInput = (e) => {
         this.setState({
-            userInput: e.target.value
+            userInput: e.target.value,
         })
     }
 
@@ -57,20 +58,28 @@ class AppInputForm extends Component {
     handleClick = (e) => {
         e.preventDefault();
         this.setState({
-            userFact: ''
+            userFact: '',
+            userInput: ''
         })
         
         // variable used in the API call
         // checks for which keyword showld be used in the call URL
         let urlCallValue = '';
-        // let dayMonthPattern = '\b(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])\b'
+    
         if (this.state.yearIsChecked) {
             urlCallValue = 'year';
         } else if (this.state.dayMonthIsChecked) {
-            urlCallValue = 'date'
+            if (this.state.userInput.match(this.state.dayMonthPattern)) {
+                urlCallValue = 'date'
+            } else {
+                urlCallValue = 'error'
+            }
         } else if (this.state.numberIsChecked) {
-            urlCallValue = 'math'
+            if (this.state.userInput.match(this.state.dayMonthPattern)) {
+                urlCallValue = 'error'
+            } 
         }
+
         axios({
             url: 'https://proxy.hackeryou.com',
             dataType: 'json',
@@ -84,27 +93,25 @@ class AppInputForm extends Component {
                 userFact: res.data
             })
         }).catch(() => {
-            alert('Something Went wrong! Please follow the input guideline in brackets.')
+            alert('Something went wrong! Please follow the input guidelines.')
         })
     }
     
     render () {
         return (
             <Fragment>
-                {/* <fieldset> */}
-                    <div className="optionsMenu">
-                        <button onClick={this.handleYearCheck}>Year</button>
-                        <button onClick={this.handleDayMonthCheck}>Month/Day</button>
-                        <button onClick={this.handleNumberCheck}>Number</button>
-                    </div>
-                {/* </fieldset> */}
+                <div className="optionsMenu">
+                    <button onClick={this.handleYearCheck}>Year</button>
+                    <button onClick={this.handleDayMonthCheck}>Month/Day</button>
+                    <button onClick={this.handleNumberCheck}>Number</button>
+                </div>
 
                 {/* Check for which component to render based on the user choice */}
-                {this.state.yearIsChecked ? <YearFact handleClick={this.handleClick} handleInput={this.handleInput} /> : null}
+                {this.state.yearIsChecked ? <YearFact handleClick={this.handleClick} handleInput={this.handleInput} userInput={this.state.userInput} /> : null}
 
-                {this.state.dayMonthIsChecked ? <DayMonthFact handleClick={this.handleClick} handleInput={this.handleInput}/> : null}
+                {this.state.dayMonthIsChecked ? <DayMonthFact handleClick={this.handleClick} handleInput={this.handleInput} userInput={this.state.userInput} /> : null}
 
-                {this.state.numberIsChecked ? <NumberFact handleClick={this.handleClick} handleInput={this.handleInput}/> : null}
+                {this.state.numberIsChecked ? <NumberFact handleClick={this.handleClick} handleInput={this.handleInput} userInput={this.state.userInput} /> : null}
 
                 <p className={this.state.userFact ? 'animate' : null}>{this.state.userFact}</p>
             </Fragment>
