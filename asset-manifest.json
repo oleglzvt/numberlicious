@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/numberlicious/static/css/main.04b592a4.chunk.css",
-    "main.js": "/numberlicious/static/js/main.cecea8fb.chunk.js",
-    "main.js.map": "/numberlicious/static/js/main.cecea8fb.chunk.js.map",
+    "main.js": "/numberlicious/static/js/main.df054e1d.chunk.js",
+    "main.js.map": "/numberlicious/static/js/main.df054e1d.chunk.js.map",
     "runtime-main.js": "/numberlicious/static/js/runtime-main.595a247e.js",
     "runtime-main.js.map": "/numberlicious/static/js/runtime-main.595a247e.js.map",
     "static/js/2.425df325.chunk.js": "/numberlicious/static/js/2.425df325.chunk.js",
     "static/js/2.425df325.chunk.js.map": "/numberlicious/static/js/2.425df325.chunk.js.map",
     "index.html": "/numberlicious/index.html",
-    "precache-manifest.acf75d8b2f432a9df2ac0019783e58ea.js": "/numberlicious/precache-manifest.acf75d8b2f432a9df2ac0019783e58ea.js",
+    "precache-manifest.0f25c63b9553abc7794b21d302f777cd.js": "/numberlicious/precache-manifest.0f25c63b9553abc7794b21d302f777cd.js",
     "service-worker.js": "/numberlicious/service-worker.js",
     "static/css/main.04b592a4.chunk.css.map": "/numberlicious/static/css/main.04b592a4.chunk.css.map",
     "static/js/2.425df325.chunk.js.LICENSE.txt": "/numberlicious/static/js/2.425df325.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.595a247e.js",
     "static/js/2.425df325.chunk.js",
     "static/css/main.04b592a4.chunk.css",
-    "static/js/main.cecea8fb.chunk.js"
+    "static/js/main.df054e1d.chunk.js"
   ]
 }
